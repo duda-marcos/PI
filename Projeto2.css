@@ -1,0 +1,131 @@
+body {
+width: 100%;
+height: 100%;
+margin: 0 auto;
+}
+
+ul{
+    padding: 0px!important;
+}
+
+.div {
+background-color: #ffffff;
+width: 980px;
+margin: 0 auto;
+padding: 16px;
+}
+
+.m{
+height: 75px;
+border-bottom: 3px solid #efefef;
+}
+
+.menu ul li {
+    display: inline-block;
+    color: #8b8b8b;
+    margin-left: 100px;
+    height: 50px;
+}
+
+.menu ul li:hover {
+    border-bottom: 3px solid black;
+}
+
+.menu ul li a:hover {
+    color: black;
+    
+}
+
+.menu ul li a {
+    color: #8b8b8b;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.menu {
+width: 50%;
+float: left;
+}
+.busca {
+    text-align: center;
+    width: 30%;
+    float: right;
+}
+.busca input {
+    background-image: url(icone.png);
+    background-repeat: no-repeat;
+    height: 30px;
+    padding: 12px;
+    width: 190px;
+    margin-top: 10px;
+    background-position: 96%;
+    border: 1px solid #d6d6d6;
+}
+.main {
+    width: 100%;
+    float: left;
+    position: relative;
+}
+button.slick-prev{
+    font-size: 0px;
+    border: none;
+    width: 25px;
+    height: 51px;
+    z-index: 9;
+    background-color: transparent;
+    position: absolute;
+    background-image: url(anterior.png);
+    top: 45%;
+    left: 14%;
+}
+button.slick-next{
+    font-size: 0px;
+    border: none;
+    width: 25px;
+    height: 51px;
+    z-index: 9;
+    background-color: transparent;
+    position: absolute;
+    background-image: url(proximo.png);
+    top: 45%;
+    right: 14%;
+}
+
+.div3{
+    width: 100%!important;
+}
+
+.slick-list {
+    width: 100%!important;
+}
+.slick-initialized {
+    overflow: hidden;
+}
+
+.slick-dots li button {
+    font-size: 0px;
+    border: 5px solid #ffffff;
+    width: 26px;
+    height: 26px;
+    background: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+.slick-dots {
+    margin: 0 auto;
+    width: 45%;
+    position: absolute;
+    left: 42%;
+    top: 500px;
+}
+
+li.slick-active button {
+    background: black;
+}
+
+.slick-dots li {
+    padding-left: 35px;
+    display: inline-block;
+}
