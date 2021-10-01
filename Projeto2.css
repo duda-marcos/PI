@@ -53,7 +53,7 @@ float: left;
     float: right;
 }
 .busca input {
-    background-image: url(./img/icone.png);
+    background-image: url(icone.png);
     background-repeat: no-repeat;
     height: 30px;
     padding: 12px;
@@ -75,7 +75,7 @@ button.slick-prev{
     z-index: 9;
     background-color: transparent;
     position: absolute;
-    background-image: url(./img/anterior.png);
+    background-image: url(anterior.png);
     top: 45%;
     left: 14%;
 }
@@ -87,7 +87,7 @@ button.slick-next{
     z-index: 9;
     background-color: transparent;
     position: absolute;
-    background-image: url(./img/proximo.png);
+    background-image: url(proximo.png);
     top: 45%;
     right: 14%;
 }
