@@ -1,0 +1,307 @@
+body {
+width: 100%;
+height: 100%;
+margin: 0 auto;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+ul{
+    padding: 0px!important;
+}
+
+.div {
+background-color: #ffffff;
+width: 950px;
+margin: 0 auto;
+padding: 16px;
+}
+
+.m{
+height: 75px;
+border-bottom: 3px solid #efefef;
+}
+
+.menu ul li {
+    display: inline-block;
+    color: #8b8b8b;
+    margin-left: 100px;
+    height: 50px;
+}
+
+.menu ul li:hover {
+    border-bottom: 3px solid black;
+}
+
+.menu ul li a:hover {
+    color: black;
+    
+}
+
+.menu ul li a {
+    color: #8b8b8b;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.menu {
+width: 50%;
+float: left;
+}
+
+.busca {
+    text-align: center;
+    width: 30%;
+    float: right;
+}
+
+.busca input {
+    background-image: url(./img/icone.png);
+    background-repeat: no-repeat;
+    height: 50px;
+    padding: 12px;
+    width: 190px;
+    margin-top: 10px;
+    background-position: 96%;
+    border: 1px solid #d6d6d6;
+}
+
+input,
+textarea{
+	font-family: "Poppings", sans-serif;
+}
+
+.container{
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	padding: 2rem;
+	background-color: #fafafa;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.form{
+	width: 100%;
+	max-width: 910px;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+	z-index: 1000;
+	overflow: hidden;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.formulario{
+	background-color: #ded5d5;
+	position: relative;
+}
+
+.circulo{
+	border-radius: 50%;
+	background: linear-gradient(135deg, transparent 20%, #c4bebe);
+	position: absolute;
+}
+
+.circulo.um{
+	width: 130px;
+	height: 130px;
+	top: 130px;
+	right: -30px;
+}
+
+.circulo.dois{
+	width: 80px;
+	height: 80px;
+	top: 10px;
+	right: 30px;
+}
+
+.formulario:before{
+	content: "";
+	position: absolute;
+	width: 26px;
+	height: 26px;
+	background-color: #ded5d5;
+	transform: rotate(45deg);
+	top: 50px;
+	left: -13px;
+}
+
+form{
+	padding: 2.3rem 2.2rem;
+	z-index: 10;
+	overflow: hidden;
+	position: relative;
+}
+
+.title{
+	color: black;
+	font-weight: 500;
+	font-size: 1.5rem;
+	line-height: 1;
+	margin-bottom: 0.7rem;
+}
+
+.input-container{
+	position: relative;
+	margin: 1rem 0;
+}
+
+
+.input{
+	width: 90%;
+	outline: none;
+	border: 2px solid black;
+	background: none;
+	padding: 0.6rem 1.2rem;
+	color: black;
+	font-weight: 500;
+	font-size: 0.95rem;
+	letter-spacing: 0.5px;
+	border-radius: 25px;
+	transition: 0.3s;
+}
+
+textarea.input{
+	padding: 0.8rem 1.2rem;
+	min-height: 150px;
+	border-radius: 22px;
+	resize: none;
+	overflow-y: auto;
+}
+
+.input-container label{
+	position: absolute;
+	top: 50%;
+	left: 15px;
+	transform: translateY(-50%);
+	padding: 0 0.4rem;
+	color: black;
+	font-size: 0.9rem;
+	font-weight: 400;
+	pointer-events: none;
+	z-index: 1000;
+	transition: 0.5s;
+}
+
+.input-container.textarea label{
+	top: 1rem;
+	transform: translateY(0);
+}
+
+.enviar{
+	padding: 0.5rem 1.3rem;
+	background-color: #fff;
+	border: 2px solid #fafafa;
+	font-size: 0.95rem;
+	color: uppercase;
+	line-height: 1;
+	border-radius: 25px;
+	outline: none;
+	cursor: pointer;
+	transition: 0.3s;
+	margin: 0;
+}
+
+.enviar:hover{
+	background-color: transparent;
+	color: #fff;
+}
+
+.input-container span{
+	position: absolute;
+	top: 0;
+	left: 25px;
+	transform: translateY(-50%);
+	font-size: 0.8rem;
+	padding: 0 0.4rem;
+	color: transparent;
+	pointer-events: none;
+	z-index: 500;
+}
+
+.input-container span:before,
+.input-container span:after{
+	content: "";
+	position: absolute;
+	width: 10%;
+	opacity: 0;
+	transition: 0.3s;
+	height: 5px;
+	background-color: #ded5d5;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.input-container span:before{
+	left: 50%;
+}
+
+.input-container span:after{
+	right: 50%;
+}
+
+.input-container.focus label{
+	top: 0;
+	transform: translateY(-50%);
+	left: 25px;
+	font-size: 0.8rem;
+}
+
+.input-container.focus span:before,
+.input-container.focus span:after{
+	width: 50%;
+	opacity: 1;
+}
+
+.contato{
+	padding: 2.3rem 2.2rem;
+	position: relative;
+}
+
+.contato .title{
+	color: black;
+}
+
+.text{
+	color: black;
+	margin: 1.5rem 0 2rem 0;
+}
+
+.informação{
+	display: flex;
+	color: #555;
+	margin: 0.7rem 0;
+	align-items: center;
+	font-size: 0.95rem;
+}
+
+.icone{
+	width: 28px;
+	margin-right: 0.7rem;
+
+}
+
+.midia-social {
+  padding: 2rem 0 0 0;
+}
+
+.midia-social p {
+  color: black;
+}
+
+.icones img {
+	width: 28px;
+	margin-right: 0.5rem;
+}
+
+.icones{
+	display: inline-block;
+}
