@@ -1,0 +1,10 @@
+.product-box{
+    border: 5px solid #f7f7f7;
+}
+.icon-del{
+    position: relative;
+    left: 48%;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 15px;
+}
